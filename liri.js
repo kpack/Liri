@@ -7,7 +7,7 @@ var request = require('request');
 var keys = require('./keys.js');
 
 var app = {
-  "my-tweets": function() {
+  myTweets: function() {
     var client = new Twitter(keys);
     client.get('statuses/user_timeline', function(error, tweetData, response) {
       if (!error) {
@@ -93,3 +93,17 @@ var app = {
     });
   }
 };
+
+// you have the app built, but now it has to take user input and return based on the input, right now there is
+// no way to interact with the app from the command line
+
+var inputString = process.argv;
+
+var command = inputString[2];
+var user_input = inputString[3];
+
+if (command == "my-tweets") {
+  // here we are calling the function from the app object above if the user 
+  // input is 'my-tweets'
+  app.myTweets();
+}
