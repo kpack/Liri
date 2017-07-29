@@ -1,0 +1,19 @@
+{
+  "name": "liri",
+  "version": "1.0.0",
+  "description": "App for bootcamp",
+  "main": "keys.js",
+  "scripts": {
+    "test": "j"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpack/Liri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpack/Liri/issues"
+  },
+  "homepage": "https://github.com/kpack/Liri#readme"
+}
